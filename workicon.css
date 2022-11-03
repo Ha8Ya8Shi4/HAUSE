@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------------------------- */
+/* ▼デスクトップファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+.sec01 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.thumbnail {
+    width: 25%;
+    margin-top: 20px;
+}
+
+.smallbox {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.smallbox img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #000000;
+}
+
+.smallbox a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.smallbox a:hover {
+    opacity: 0.6;
+    transition: 0.8s;
+}
+
+h4 {
+    font-size: 20px;
+    line-height: 30px;
+    /*font-weight: bold;*/
+    margin-top: 15px;
+    padding-bottom: 20px;
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大) */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){
+
+}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+    .sec01 {
+        padding-bottom: 10px;
+    }
+    .thumbnail {
+        width: 25%;
+        margin-top: 15px;
+    }
+    h4 {
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 10px;
+        padding-bottom: 0px;
+    }
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+    .thumbnail {
+        width: 50%;
+    }
+    h4 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザイン(max:480! 妥協:580) */
+/* -------------------------------------------- */
+@media screen and (max-width: 580px) {
+    .smallbox {
+        width: 90%;
+    }
+
+}
