@@ -1,0 +1,117 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.mine {
+    display: flex;
+    width: 100%;
+    height: auto;
+    /*範囲確認用!!*/
+    /*background-color: #ffffff;*/
+}
+
+.mine-left {
+    width: 50%;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.mine-left img {
+    width: 50%;
+    height: auto;
+    /*border: 1px solid #000000;*/
+}
+
+.mine-right {
+    width: 50%;
+    padding: 30px 5%;
+    margin: 30px 0;
+    color: #000000;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    /*範囲確認用!!*/
+    /*background-color: aqua;*/
+}
+
+/*子要素内の上下中央揃え*/
+/*.mine-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大) */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){
+
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+    .mine-left {
+        margin-top: 40px;
+    }
+    .mine-right {
+        padding: 10px 5%;
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+    .mine {
+        flex-direction: column;
+    }
+    .mine-left {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .mine-left img {
+        width: 35%;
+    }    
+    .mine-right {
+        width: 100%;
+        padding: 10px 0;
+        margin: 20px 0 30px 0;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    /*子要素内の上下中央揃え*/
+    .mine-right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    } 
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザイン(max:480! 妥協:580) */
+/* -------------------------------------------- */
+@media screen and (max-width: 580px) {
+    .mine-left {
+        margin-top: 10px;
+    }
+    .mine-left img {
+        width: 45%;
+    }    
+    .mine-right {
+        font-size: 10px;
+        line-height: 15px;
+    }
+    
+
+}
