@@ -1,0 +1,145 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------------------------- */
+/* ▼デスクトップファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+.sec01 {
+    width: 100%;
+    height: 570px;
+    padding-top: 110px;
+    text-align: center;
+}
+
+.sec01 h3 {
+    /*TOPマージン指定だと起点ズレる！*/
+    font-size: 30px;
+    line-height: 45px;
+}
+.sec01 h2 {
+    margin-top: 50px;
+    font-size: 40px;
+}
+
+.sns-icons {
+    margin: 60px auto 0px;
+    width: 100%;
+    /*範囲確認用*/
+    /*background-color: aqua;*/
+}
+
+.btn-img:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.btn-img00:hover {
+    opacity: 0.5;
+    transition: 0.4s;
+}
+
+.btn-img img {
+    width: auto;
+    height: 70px;
+}
+
+/*動作不良のためclass分ける*/
+.btn-img00 img {
+    width: auto;
+    height: 70px;
+    margin: 0 60px;
+}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大) */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){
+
+}
+
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+    .sec01 {
+        height: 380px;
+        padding-top: 50px;
+    }
+    .sec01 h3 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .sec01 h2 {
+        font-size: 36px;
+    }            
+    .btn-img img {
+        height: 50px;
+    }
+    
+    /*動作不良のためclass分ける*/
+    .btn-img00 img {
+        height: 50px;
+        margin: 0 50px;
+    }
+    
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+    .sec01 {
+        height: 600px;
+        padding-top: 150px;
+    }
+    
+    .sec01 h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .sec01 h2 {
+        font-size: 30px;
+    }
+    
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザイン(max:480! 妥協:580) */
+/* -------------------------------------------- */
+@media screen and (max-width: 580px) {
+    .sec01 {
+        height: 468px;
+        padding-top: 100px;
+    }
+    
+    .sec01 h3 {
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .sec01 h2 {
+        margin-top: 40px;
+        font-size: 20px;
+    }
+    
+    .sns-icons {
+        margin: 40px auto 0px;
+    }
+    
+    .btn-img img {
+        height: 30px;
+    }
+    
+    /*動作不良のためclass分ける*/
+    .btn-img00 img {
+        height: 30px;
+        margin: 0 30px;
+    }
+
+}
