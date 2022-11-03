@@ -1,0 +1,212 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* --------------------------------------------- */
+/* ▼デスクトップファースト (全環境に共通のデザイン) */
+/* --------------------------------------------- */
+
+* {
+	box-sizing: border-box;
+    font-family: "Avenir Next", "Helvetica Neue", "Helvetica", "Arial", "Hiragino Kaku Gothic ProN W3", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック Medium", "meiryo", sans-serif; 
+    background-color: #ffffff;
+}
+body {
+    overflow-y: scroll;
+}
+
+/*headerの内容*/
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 2px solid #000000;
+}
+
+.container {
+    width: 90%;
+    margin: 0  auto;
+    /*background-color: aqua;*/
+}
+
+.logo {
+    float: left;
+    height: 60px;
+    margin-top: 20px;
+}
+
+.header-menu {
+    float: right;
+}
+
+header .header-menu a {
+    text-decoration: none;
+    margin-top: 34px;
+    margin-left: 35px;
+    float: left;
+    color: #000000;
+    font-size: 32px;
+    /*フォント制御必要？*/
+    /*font-family: Arial, Helvetica, sans-serif;*/
+}
+header .header-menu a:hover {
+    opacity: 0.5;
+}
+.hamburger-menu {
+   display: none; 
+  }
+
+/*mainの内容(sec01,02)*/
+/*main {
+    見え方確認用
+    background-color: blueviolet;
+}*/
+
+/*ページ下半分の内容(sec02)*/
+.sec02 {
+    display: flex;
+    width: 100%;
+    /*bottom: 40px;
+    left: 5%;
+    position: fixed;
+    background-color: #000000;*/
+}
+
+.sec02-left {
+    width: 50%;
+}
+
+.sec02-left img, .sec02-right img {
+    width: 35%;
+}
+
+.sec02-right {
+    width: 50%;
+}
+
+/*子要素内の上下中央揃え*/
+.sec02-right, .sec02-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec02-right h1, .sec02-left h1 {
+    color: #000000;
+    font-size: 64px;
+    font-weight: bold;
+    border-bottom: 2px solid #000000;
+}
+
+/*自己紹介ページ用反転*/
+
+/*自己紹介ページ用反転（ここまで）*/
+
+/*footerの内容*/
+footer {
+    /*position: fixed;
+    bottom: 0;*/
+    width: 100%;
+    height: 40px;
+    padding-top: 12px;
+    color: #000000;
+    font-size: 16px;
+    text-align: center;
+}
+
+/*Desktop View*/
+/* ------------------------------------ */
+/* ▼PC用デザイン(大) */
+/* ------------------------------------ */
+@media screen and (max-width: 1920px){
+}
+
+/*Desktop View*/
+/* ------------------------------------ */ 
+/* ▼PC用デザイン */
+/* ------------------------------------ */
+@media screen and (max-width: 1366px) {
+    header {
+        height: 80px;
+    }
+    .logo {
+        height: 48px;
+        margin-top: 16px;
+    }
+    header .header-menu a {
+        margin-top: 25px;
+        margin-left: 35px;
+        font-size: 30px;
+    }
+    .sec02-right h1, .sec02-left h1 {
+        font-size: 48px;
+    }
+    footer {
+        height: 32px;
+        padding-top: 9px;
+        font-size: 14px;
+    }
+
+}
+
+/*Tablet View*/
+/* -------------------------------------------- */
+/* ▼タブレット用デザイン */
+/* -------------------------------------------- */
+@media screen and (max-width: 960px) {
+    header {
+        height: 64px;
+        border-bottom: 1px solid #000000;
+    }
+    .logo {
+        height: 38px;
+        margin-top: 13px;
+    }
+    header .header-menu a {
+        margin-top: 22px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .sec02-left img, .sec02-right img {
+        width: 100%;
+    }
+    .sec02-right h1, .sec02-left h1 {
+        font-size: 36px;
+    }
+    footer {
+        height: 24px;
+        padding-top: 6px;
+        font-size: 12px;
+    }
+}
+
+/*SP View*/
+/* -------------------------------------------- */
+/* ▼SP用デザイン(max:480! 妥協:580) */
+/* -------------------------------------------- */
+@media screen and (max-width: 580px) {
+    header {
+        height: 48px;
+    }
+    .container {
+        width: 95%;
+    }
+    .logo {
+        height: 28px;
+        margin-top: 10px;
+    }
+    .header-menu {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block; 
+    }
+    .sec02-right h1, .sec02-left h1 {
+        font-size: 30px;
+        font-weight: normal;
+    }
+    footer {
+        height: 16px;
+        padding-top: 3px;
+        font-size: 10px;
+    }
+}
